@@ -1,0 +1,59 @@
+body{
+	box-sizing:border-box;
+	overflow: none;
+}
+
+/*Positioning the Button*/
+.modal{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top:0;
+		
+}
+
+.trigger{
+	position: relative;
+	left: 40%;
+	margin-top: 5%;	
+}
+/*Setting modal-content position and visibility to hidden*/
+.modal-content{
+	position: relative;
+	top: 20%;
+	margin: 10% auto;	
+	background-color:#9494b8;
+	padding:2% 1% 2% 4% ;
+	width: 24rem;
+	border-radius: 15px;
+	visibility: hidden;
+	transform: scale(1.2);
+	transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25;
+	color: white;
+}
+
+/*Formatting the close button*/
+.closeBtn{
+	float: right;
+	width: 1.5rem;
+	line-height: 1.5rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.25rem;
+	background-color: lightgray;
+}
+
+/*Formating the hover effect of the close button*/
+.closeBtn:hover{
+	background-color:#0a0a0f;
+}
+
+/*Showing the modal-content*/
+.show-modal{
+	opacity: 1;
+	visibility: visible;
+	transform: scale(1.0);
+	transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+	
+}
+
